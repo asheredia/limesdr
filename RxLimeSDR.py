@@ -7,7 +7,7 @@ import time
 import wave
 import struct
 # Configuración SDR
-sdr = SoapySDR.Device(dict(driver="rtlsdr"))
+sdr = SoapySDR.Device(dict(driver="lime"))
 sdr.setSampleRate(SOAPY_SDR_RX, 0, 1e6)
 sdr.setFrequency(SOAPY_SDR_RX, 0, 915e6)
 #SoapySDRDevice_setAntenna(SOAPY_SDR_RX, 0)
