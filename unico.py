@@ -24,7 +24,7 @@ record_seconds = 5
 num_samples = sample_rate * record_seconds
 
 # Archivo de captura
-wav_file = wave.open("samples.wav", "wb") 
+wav_file = wave.open("samplest.wav", "wb") 
 wav_file.setnchannels(2)
 wav_file.setsampwidth(2)
 wav_file.setframerate(sample_rate)
