@@ -38,9 +38,6 @@ print("Grabando...")
 start_time = time.time()
 
 while (time.time() - start_time) < record_seconds:
-#    current_time = time.time()
- #   elapsed_time = current_time - start_time
-  #  print(f"Tiempo transcurrido: {elapsed_time} segundos")
     elapsed_time = round(time.time() - start_time)
     print(f"Segundo: {elapsed_time}")
     sample_count = 0
@@ -52,7 +49,6 @@ while (time.time() - start_time) < record_seconds:
     # Leer muestras del SDR
     sr = sdr.readStream(rx_stream, [samples], len(samples))
 
-#
     # Escribir las muestras en el archivo WAV
     for i in range(len(samples)):
         # Obtener los valores I y Q de la muestra compleja
